@@ -32,15 +32,15 @@
         }
     ],
     "require": {
-        "laravel/framework": "^8.0|^9.0",
+        "laravel/framework": "^10.0|^11.0",
         "php": "^7.4|^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.4",
         "phpspec/prophecy-phpunit": "^2.0",
-        "orchestra/testbench": "^6.2|^7.2",
         "aws/aws-sdk-php": "^3.158",
-        "stichoza/google-translate-php":  "^4.1.0"
+        "stichoza/google-translate-php":  "^4.1.0",
+        "orchestra/testbench": "^8.23"
     },
     "suggest": {
         "aws/aws-sdk-php": "Needed for the AWS Translator",
