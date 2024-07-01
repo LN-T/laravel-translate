@@ -33,7 +33,8 @@
     ],
     "require": {
         "laravel/framework": "^10.0|^11.0",
-        "php": "^7.4|^8.0"
+        "php": "^7.4|^8.0",
+        "deeplcom/deepl-php": "^1.8"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.4",
@@ -42,6 +43,7 @@
         "stichoza/google-translate-php":  "^4.1.0",
         "orchestra/testbench": "^8.23"
     },
+    "minimum-stability": "alpha",
     "suggest": {
         "aws/aws-sdk-php": "Needed for the AWS Translator",
         "stichoza/google-translate-php": "Needed for the free Google Translate API"
@@ -71,5 +73,10 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit --colors=always --process-isolation --verbose --configuration phpunit.xml"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
